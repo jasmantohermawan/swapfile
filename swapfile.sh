@@ -13,10 +13,10 @@ sudo mkswap /swapfile
 
 # Enable Permanent Swap on System
 sudo cp /etc/fstab /etc/fstab.bak
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+echo '/swapfile none swap sw 0 0' >> /etc/fstab
 
 # Change swappiness Close to 0
-echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
+echo 'vm.swappiness=10' >> /etc/sysctl.conf
 
 # Finish
 echo "To know the effect, please restart the server."
