@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install Wget
-sudo apt install wget -y
-
 # Adding Swap Size
 echo "Set Capacity: (e.g. 1G or greater)"
 read capacity
