@@ -1,7 +1,11 @@
 #!/bin/bash
 
+# 
+sudo apt update
+sudo apt upgrade -y
+
 # Adding Swap Size
-echo "Set Capacity: (e.g. 1G or greater)"
+echo "Set Capacity: (e.g. 1G, 2G or greater)"
 read capacity
 sudo fallocate -l $capacity /swapfile
 
@@ -19,4 +23,8 @@ echo '/swapfile none swap sw 0 0' >> /etc/fstab
 echo 'vm.swappiness=10' >> /etc/sysctl.conf
 
 # Finish
-echo "To know the effect, please restart the server."
+echo "Installation Success"
+echo " Reboot in 5 Sec"
+echo " 
+sleep 5
+reboot
