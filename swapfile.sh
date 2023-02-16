@@ -5,9 +5,9 @@ sudo apt update
 sudo apt upgrade -y
 
 # Adding Swap Size
-echo "Set Capacity: (e.g. 1G, 2G or greater)"
+echo "Set Capacity: (Enter Valid Number)"
 read capacity
-sudo fallocate -l $capacity /swapfile
+sudo fallocate -l ${capacity// /}G /swapfile
 
 # Change Permissions For Root Only
 sudo chmod 600 /swapfile
