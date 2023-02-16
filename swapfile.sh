@@ -7,7 +7,7 @@ sudo apt upgrade -y
 # Adding Swap Size
 echo "Set Capacity: (Enter Valid Number)"
 read capacity
-sudo fallocate -l ${capacity// /}G /swapfile
+sudo fallocate -l ${capacity}G /swapfile
 
 # Change Permissions For Root Only
 sudo chmod 600 /swapfile
@@ -27,4 +27,4 @@ echo "Installation Success"
 echo " Reboot in 5 Sec"
 echo " 
 sleep 5
-reboot
+sudo reboot
