@@ -1,6 +1,7 @@
 # swapfile
 ## Install
 Run as ROOT
+
 Copy this code & paste in your vps terminal
 
 ```
