@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 
+# Update
 sudo apt update
 sudo apt upgrade -y
 
@@ -25,6 +25,5 @@ echo 'vm.swappiness=10' >> /etc/sysctl.conf
 # Finish
 echo "Installation Success"
 echo " Reboot in 5 Sec"
-echo " 
 sleep 5
 sudo reboot
