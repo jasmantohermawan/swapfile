@@ -17,10 +17,10 @@ sudo mkswap /swapfile
 
 # Enable Permanent Swap on System
 sudo cp /etc/fstab /etc/fstab.bak
-echo '/swapfile none swap sw 0 0' >> /etc/fstab
+sudo echo '/swapfile none swap sw 0 0' >> /etc/fstab
 
 # Change swappiness Close to 0
-echo 'vm.swappiness=10' >> /etc/sysctl.conf
+sudo echo 'vm.swappiness=10' >> /etc/sysctl.conf
 
 # Finish
 echo "Installation Success"
